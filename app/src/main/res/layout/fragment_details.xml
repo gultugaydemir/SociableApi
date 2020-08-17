@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Author/Project"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/details_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_avatar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.sociableapi.DetailListView
+            android:id="@+id/DetailListWatchers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text_field="Watchers"
+            app:number_field="N.A." />
+
+        <com.example.sociableapi.DetailListView
+            android:id="@+id/DetailListStars"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text_field="Stars"
+            app:number_field="N.A." />
+
+        <com.example.sociableapi.DetailListView
+            android:id="@+id/DetailListForks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text_field="Forks"
+            android:layout_marginBottom="8dp"
+            app:number_field="N.A." />
+
+    </LinearLayout>
+
+        <com.example.sociableapi.DetailListView
+            android:id="@+id/currentStars"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text_field="Current Period Stars"
+            android:layout_marginBottom="8dp"
+            app:number_field="N.A." />
+        <com.example.sociableapi.DetailListView
+            android:id="@+id/Language"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text_field="Language"
+            android:layout_marginBottom="8dp"
+            app:number_field="N.A." />
+
+        <com.example.sociableapi.DetailListView
+            android:id="@+id/Size"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text_field="Size"
+            android:layout_marginBottom="8dp"
+            app:number_field="N.A." />
+
+        <com.example.sociableapi.DetailListView
+            android:id="@+id/Events"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text_field="Current Period Stars"
+            android:layout_marginBottom="8dp"
+            app:number_field="N.A." />
+
+        <com.example.sociableapi.DetailListView
+            android:id="@+id/Issues"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text_field="Current Period Stars"
+            android:layout_marginBottom="8dp"
+            app:number_field="N.A." />
+
+        <com.example.sociableapi.DetailListView
+            android:id="@+id/Commits"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text_field="Current Period Stars"
+            android:layout_marginBottom="8dp"
+            app:number_field="N.A." />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
