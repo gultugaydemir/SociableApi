@@ -6,11 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
-
     <TextView
         android:id="@+id/Title"
         android:layout_width="wrap_content"
@@ -50,36 +45,36 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.example.sociableapi.DetailListView
-            android:id="@+id/DetailListWatchers"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:text_field="Watchers"
-            app:number_field="N.A." />
+            android:layout_height="match_parent">
 
-        <com.example.sociableapi.DetailListView
-            android:id="@+id/DetailListStars"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:text_field="Stars"
-            app:number_field="N.A." />
+            <com.example.sociableapi.DetailListView
+                android:id="@+id/DetailListWatchers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:text_field="Watch"
+                app:number_field="N.A." />
 
-        <com.example.sociableapi.DetailListView
-            android:id="@+id/DetailListForks"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:text_field="Forks"
-            android:layout_marginBottom="8dp"
-            app:number_field="N.A." />
+            <com.example.sociableapi.DetailListView
+                android:id="@+id/DetailListStars"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:text_field="Stars"
+                app:number_field="N.A." />
 
-    </LinearLayout>
+            <com.example.sociableapi.DetailListView
+                android:id="@+id/DetailListForks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:text_field="Forks"
+                android:layout_marginBottom="8dp"
+                app:number_field="N.A." />
+
+        </LinearLayout>
 
         <com.example.sociableapi.DetailListView
             android:id="@+id/currentStars"
@@ -89,6 +84,7 @@
             app:text_field="Current Period Stars"
             android:layout_marginBottom="8dp"
             app:number_field="N.A." />
+
         <com.example.sociableapi.DetailListView
             android:id="@+id/Language"
             android:layout_width="match_parent"
@@ -112,7 +108,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text_field="Current Period Stars"
+            app:text_field="Events"
             android:layout_marginBottom="8dp"
             app:number_field="N.A." />
 
@@ -121,7 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text_field="Current Period Stars"
+            app:text_field="Issues"
             android:layout_marginBottom="8dp"
             app:number_field="N.A." />
 
@@ -130,7 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text_field="Current Period Stars"
+            app:text_field="Commits"
             android:layout_marginBottom="8dp"
             app:number_field="N.A." />
 
